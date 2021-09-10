@@ -1,13 +1,16 @@
-import React from 'react';
-import Loading from './src/views/Loading/Loading';
-import Login from './src/views/Login/Login';
-import Cadastro from './src/views/Cadastro/Cadastro';
-import Perfil from './src/views/Perfil/Perfil';
-import { StatusBar } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Perfil from "./src/views/Perfil/Perfil";
+const Tab = createBottomTabNavigator();
 
-export default function App() {
-  return (
-      <Perfil />
+function App() {
+  return(
+  <NavigationContainer>
+    <Tab.Navigator>
+    <Tab.Screen name="Perfil" component={Perfil} />
+      </Tab.Navigator> 
+  </NavigationContainer>
   );
 }
-
+export default App;
