@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Perfil from "./src/views/Perfil/Perfil";
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator ();
 
 function App() {
   return(
