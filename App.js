@@ -1,16 +1,12 @@
-import * as React from 'react';
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Perfil from "./src/views/Perfil/Perfil";
-const Tab = createBottomTabNavigator ();
+import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
+import Routes from './src/Routes/Routes'
 
 function App() {
   return(
-  <NavigationContainer>
-    <Tab.Navigator>
-    <Tab.Screen name="Perfil" component={Perfil} />
-      </Tab.Navigator> 
-  </NavigationContainer>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 }
 export default App;

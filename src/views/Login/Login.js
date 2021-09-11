@@ -12,13 +12,13 @@ function Login(){
                 <TextInput 
                     style={LoginStyle.campo}
                     placeholder="Username/e-mail"
-                    placeholderTextColor="#fff"
+                    placeholderTextColor="rgba(255, 255, 255, 0.3)"
                     //value={nome}
                 />
                 <TextInput 
                     style={LoginStyle.campo}
                     placeholder="Senha"
-                    placeholderTextColor="#fff"
+                    placeholderTextColor="rgba(255, 255, 255, 0.3)"
                     secureTextEntry={true}
                     //value={senha}
                 />
