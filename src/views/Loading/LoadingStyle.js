@@ -17,7 +17,7 @@ const LoadingStyle = StyleSheet.create({
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
-        top: 80,
+        top: 67,
     },
     texto: {
         color: '#fff',
